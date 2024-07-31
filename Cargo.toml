@@ -1,0 +1,13 @@
+[package]
+name = "rust_repl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reedline = "0.33.0"                                            # Ensure you have the latest version
+crossterm = "0.26.1"                                           # Needed for custom keybindings (if you plan to use them)
+rustyline = "14.0.0"
+ndarray = "0.15.4"
+linfa = "0.6.0"
+linfa-linear = "0.6.0"
+polars = { version = "0.41.3", features = ["csv", "parquet"] }
